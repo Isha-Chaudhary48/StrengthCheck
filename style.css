@@ -1,0 +1,57 @@
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(76, 41, 146);
+  color: rgb(189, 163, 243);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  font-size: 48px;
+}
+#password-input {
+  height: 3rem;
+  width: 70vw;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(231, 230, 234);
+  outline: none;
+  text-align: center;
+  font-size: 20px;
+}
+#password-input:focus{
+    border-color: rgb(57, 16, 181);
+   
+}
+.strength-meter {
+  position: relative;
+  height: 2.5rem;
+  width: 70vw;
+  border: 3px solid rgb(170, 143, 229);
+  border-radius: 1.2rem;
+  margin: 20px;
+  overflow: hidden;
+}
+.strength-meter::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: calc(1% * var(--strength, 0));
+  background-color: rgb(134, 83, 236);
+  border-radius: 0.9rem;
+  transition: width 200ms;
+}
+.reasons > *{
+    margin-top: 20px;
+    font-size: 25px;
+   
+
+}
+
